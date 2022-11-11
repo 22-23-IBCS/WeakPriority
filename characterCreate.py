@@ -25,6 +25,7 @@ def main():
     bigEye2 = Circle(Point(450, 250), 40)
     smallEye1 = Circle(Point(350, 250), 20)
     smallEye2 = Circle(Point(450, 250), 20)
+    
 
     Mouth1_pt1 = Line(Point(350, 450), Point(400, 450))
     Mouth1_pt2 = Line(Point(350, 435), Point(350, 465))
@@ -32,13 +33,23 @@ def main():
 
     Mouth2_pt1 = Line(Point(325, 450), Point(350, 425))
     Mouth2_pt2 = Line(Point(375, 450), Point(350, 425))
+    
 
-    #Nose1_pt1 = Line(Point(350
+    Nose1_pt1 = Line(Point(400, 300), Point(430, 400))
+    Nose1_pt2 = Line(Point(400, 400), Point(430, 400))
+
+    Nose2_pt1 = Line(Point(400, 300), Point(430, 400))
+    Nose2_pt2 = Line(Point(400, 400), Point(430, 400))
+    Nose2_pt3 = Line(Point(400, 300), Point(400, 400))
+    
+
+    
+    
 
     
     
     
-    Q = Quit(win, Point(650, 775), Point(750, 875))
+    Q = Quit(win, Point(650, 750), Point(750, 800))
 
 
     while True:
@@ -81,6 +92,26 @@ def main():
             Mouth2_pt2.undraw()
             Mouth2_pt1.draw(win)
             Mouth2_pt2.draw(win)
+
+        if B6.isClicked(m):
+            Nose1_pt1.undraw()
+            Nose1_pt2.undraw()
+            Nose2_pt1.undraw()
+            Nose2_pt2.undraw()
+            Nose2_pt3.undraw()
+            Nose1_pt1.draw(win)
+            Nose1_pt2.draw(win)
+            
+
+        if B7.isClicked(m):
+            Nose1_pt1.undraw()
+            Nose1_pt2.undraw()
+            Nose2_pt1.undraw()
+            Nose2_pt2.undraw()
+            Nose2_pt3.undraw()
+            Nose2_pt1.draw(win)
+            Nose2_pt2.draw(win)
+            Nose2_pt3.draw(win)
             
 
             
